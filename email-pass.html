@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông báo trúng tuyển - CLB Sổ Media</title>
+    <style>
+      .frame {
+        max-width: 700px;
+        margin: 10px auto;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+        text-align: center;
+      }
+      .email-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+      }
+      .email-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 5px;
+      }
+      .header {
+        max-width: 540px;
+        margin: 24px auto 0 auto;
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 24px 18px 18px 18px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        text-align: center;
+      }
+      .header > * {
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+      }
+      h2 {
+        color: black;
+        margin-top: 20px;
+        font-size: 30px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .congratulations-text p {
+        background-color: #d1dae6;
+        color: #6a91d6;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 0 12px 0;
+      }
+
+      .text p {
+        text-align: justify;
+        margin: 12px 0;
+      }
+      .quote {
+        margin: 24px auto 18px auto;
+        padding: 8px 6px 10px 10px;
+        background: #f7fafd;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        max-width: 600px;
+        text-align: center;
+      }
+      .card-symbols {
+        font-size: 28px;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
+        margin-bottom: 10px;
+        user-select: none;
+      }
+      .info-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto 18px auto;
+        font-size: 16px;
+        background: #fff;
+      }
+      .info-table th,
+      .info-table td {
+        padding: 10px;
+        border: 1px solid #d1dae6;
+        text-align: left;
+      }
+      .info-table th {
+        background: #e9eef6;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 16px 10px 10px 10px;
+      }
+      .info-table .info-label {
+        width: 140px;
+        font-weight: bold;
+      }
+      .info-table .info-footer {
+        text-align: center;
+        background: #f5f7fa;
+        padding: 18px 10px 18px 10px;
+      }
+
+      p {
+        line-height: 1.6;
+        margin: 12px 0;
+      }
+      button {
+        color: white;
+        background: linear-gradient(to right, #4a5df0, #9a69e8);
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 15px 5px;
+      }
+      button:hover {
+        background-color: #155ab6;
+      }
+      h3 {
+        margin-top: 30px;
+        color: #444;
+      }
+      .contact {
+        text-align: left;
+        margin-top: 15px;
+      }
+      .footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666;
+      }
+      @media only screen and (max-width: 600px) {
+        .frame {
+          padding: 8px 2px;
+        }
+        .email-container {
+          padding: 0;
+        }
+        .header {
+          padding: 10px 4px;
+        }
+        button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #7f8ada, #a285d1);
+      font-family: Arial, Helvetica, sans-serif;
+    "
+  >
+    <div class="frame">
+      <div class="email-container">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/somedia-b1b9a.firebasestorage.app/o/test%2FMAIL%20G%E1%BB%ACI.png?alt=media&token=30e43dfc-3021-4f8c-9691-78cc49749b21"
+          alt="Chúc mừng - Sổ Media"
+        />
+        <div class="header">
+          <h2>Xin chào $NAME</h2>
+          <div class="congratulations-text">
+            <p>
+              🎊 Chúc mừng bạn đã xuất sắc vượt qua <br />
+              <strong style="color: #6a91d6">Vòng CV - WHIMSY FALL! 🎊</strong>
+            </p>
+          </div>
+          <table
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            style="
+              background-color: rgba(248, 249, 250, 0.5);
+              border-radius: 10px;
+              border: 1px solid rgba(233, 236, 239, 0.5);
+              margin-bottom: 25px;
+            "
+          >
+            <tr>
+              <td
+                class="text-block"
+                style="
+                  font-size: 16px;
+                  color: #333333;
+                  line-height: 1.8;
+                  text-align: justify;
+                  padding: 20px;
+                "
+              >
+                Qua quá trình xem xét và kiểm duyệt kỹ lưỡng về sự thể hiện ở
+                vòng đơn của bạn, chúng mình thực sự thấy được tiềm năng cũng
+                như sự nhiệt tình và mong muốn của bạn được trở thành thành viên
+                của Sổ Media.
+              </td>
+            </tr>
+          </table>
+
+          <table
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            style="
+              background-color: rgba(248, 249, 250, 0.5);
+              border-radius: 10px;
+              border: 1px solid rgba(233, 236, 239, 0.5);
+              margin-bottom: 30px;
+            "
+          >
+            <tr>
+              <td
+                class="text-block"
+                style="
+                  font-size: 16px;
+                  color: #333333;
+                  line-height: 1.8;
+                  text-align: justify;
+                  padding: 20px;
+                "
+              >
+                Hi vọng rằng với kết quả này, bạn sẽ có được sự tự tin và chuẩn
+                bị thật tốt cho
+                <strong style="color: #4a90e2">Vòng Phỏng vấn - CHESHIRE</strong
+                >. Mong rằng bạn sẽ thể hiện thật xuất sắc và bước đến gần hơn
+                với Đại gia đình Sổ Media.
+              </td>
+            </tr>
+          </table>
+          <div class="quote">
+            <div class="card-symbols">
+              <span style="color: #000000">♠</span>
+              <span style="color: #ff0000">♥</span>
+              <span style="color: #ff0000">♦</span>
+              <span style="color: #000000">♣</span>
+              <span style="color: #000000">♠</span>
+              <span style="color: #ff0000">♥</span>
+              <span style="color: #ff0000">♦</span>
+              <span style="color: #000000">♣</span>
+            </div>
+            <button>📄 Xem trang thông báo pass CV của bạn</button>
+          </div>
+          <div class="information">
+            <table class="info-table">
+              <tr>
+                <th colspan="2">Thông tin chi tiết về buổi phỏng vấn</th>
+              </tr>
+              <tr>
+                <td class="info-label">Địa điểm</td>
+                <td>
+                  • Ngày 25/09: Phòng Lab Huawei Tầng 2 Hội Trường A2<br />
+                  • Ngày 26/09: Phòng Lab Huawei Tầng 2 Hội Trường A2
+                </td>
+              </tr>
+              <tr>
+                <td class="info-label">Thời gian</td>
+                <td>8h - 17h ngày 25/09/2025 và 26/09/2025</td>
+              </tr>
+              <tr>
+                <td class="info-label">Thời lượng</td>
+                <td>Dự kiến khoảng 10-15 phút</td>
+              </tr>
+              <tr>
+                <td class="info-footer" colspan="2">
+                  <button>📝 Đăng ký khung giờ phỏng vấn</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <table
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            style="
+              background-color: rgba(74, 144, 226, 0.1);
+              border-radius: 15px;
+              border: 2px solid rgba(74, 144, 226, 0.2);
+              margin: 40px 0;
+            "
+          >
+            <tr>
+              <td
+                class="closing-message"
+                style="
+                  text-align: center;
+                  font-size: 16px;
+                  color: #333333;
+                  font-weight: bold;
+                  padding: 25px;
+                "
+              >
+                Hẹn gặp bạn ở vòng phỏng vấn!<br />
+                <span style="color: #4a90e2; font-size: 16px; font-weight: 500"
+                  >See ya!</span
+                ><br />
+                <strong
+                  style="
+                    color: #4a90e2;
+                    font-size: 20px;
+                    font-weight: 800;
+                    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+                    letter-spacing: 0.5px;
+                  "
+                  >✨ Sổ Media ✨</strong
+                >
+              </td>
+            </tr>
+          </table>
+
+          <h3>📞 Thông tin liên hệ</h3>
+          <div class="contact">
+            <p>📩 clbsomediaptit@gmail.com</p>
+            <p>📍 Km10, Nguyễn Trãi, Hà Đông, Hà Nội</p>
+            <p>
+              📞 Liên hệ trực tiếp:<br />
+              Uyên Nhi: 0979.236.877 | Văn Trung: 0383.841.814
+            </p>
+          </div>
+        </div>
+        <div class="map">🗺️ Bản đồ vị trí</div>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/somedia-b1b9a.firebasestorage.app/o/test%2F%C4%90%E1%BB%8AA%20%C4%90I%E1%BB%82M-01.png?alt=media&token=f2b8a4c5-5c6c-4726-a18f-5bb2042b43b3"
+          alt="Địa điểm phỏng vấn"
+        />
+      </div>
+      <div class="footer">CLB Sổ Media - Gen 9 Recruitment</div>
+    </div>
+  </body>
+</html>
