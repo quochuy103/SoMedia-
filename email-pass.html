@@ -6,8 +6,8 @@
     <title>Thông báo trúng tuyển - CLB Sổ Media</title>
     <style>
       .frame {
-        max-width: 700px;
-        margin: 10px auto;
+        max-width: 760px;
+        margin: 5px auto;
         background: #fff;
         border-radius: 16px;
         box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
@@ -26,7 +26,7 @@
         border-radius: 5px;
       }
       .header {
-        max-width: 540px;
+        max-width: 580px;
         margin: 24px auto 0 auto;
         background: #ffffff;
         border-radius: 10px;
@@ -121,9 +121,7 @@
         cursor: pointer;
         margin: 15px 5px;
       }
-      button:hover {
-        background-color: #155ab6;
-      }
+
       h3 {
         margin-top: 30px;
         color: #444;
@@ -132,10 +130,27 @@
         text-align: left;
         margin-top: 15px;
       }
+      .contact-two-column {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .map {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+        color: #4a90e2;
+        padding: 6px 0;
+        margin: 20px auto;
+      }
       .footer {
-        margin-top: 20px;
-        font-size: 14px;
-        color: #666;
+        text-align: center; /* Canh giữa nội dung */
+        font-size: 14px; /* Cỡ chữ nhỏ, vừa phải */
+        color: white; /* Màu xám nhạt, dịu mắt */
+        background: linear-gradient(to right, #7f8ada, #a285d1);
+        margin-top: 20px; /* Khoảng cách phía trên */
+        padding: 12px 0; /* Khoảng cách trên dưới trong footer */
+        border-radius: 1px;
       }
       @media only screen and (max-width: 600px) {
         .frame {
@@ -157,6 +172,9 @@
     style="
       margin: 0;
       padding: 0;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
       background: linear-gradient(to right, #7f8ada, #a285d1);
       font-family: Arial, Helvetica, sans-serif;
     "
@@ -310,29 +328,165 @@
                     font-size: 20px;
                     font-weight: 800;
                     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-                    letter-spacing: 0.5px;
+                    letter-spacing: 1px;
                   "
                   >✨ Sổ Media ✨</strong
                 >
               </td>
             </tr>
           </table>
+          <table
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            style="
+              background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+              border: 2px solid #4a90e2;
+              border-radius: 20px;
+              box-shadow: 0 10px 30px rgba(74, 144, 226, 0.2);
+              max-width: 700px;
+              margin: 30px auto;
+              padding: 25px;
+              font-family: Arial, Helvetica, sans-serif;
+            "
+          >
+            <!-- Tiêu đề -->
+            <tr>
+              <td
+                style="
+                  text-align: center;
+                  font-size: 18px;
+                  font-weight: bold;
+                  color: #333;
+                  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+                  padding-bottom: 20px;
+                "
+              >
+                📞 Thông tin liên hệ
+              </td>
+            </tr>
 
-          <h3>📞 Thông tin liên hệ</h3>
-          <div class="contact">
-            <p>📩 clbsomediaptit@gmail.com</p>
-            <p>📍 Km10, Nguyễn Trãi, Hà Đông, Hà Nội</p>
-            <p>
-              📞 Liên hệ trực tiếp:<br />
-              Uyên Nhi: 0979.236.877 | Văn Trung: 0383.841.814
-            </p>
-          </div>
+            <!-- Hai cột -->
+            <tr>
+              <td>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td
+                      style="
+                        width: 50%;
+                        padding-right: 10px;
+                        vertical-align: top;
+                      "
+                    >
+                      <table
+                        width="100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        style="
+                          background: linear-gradient(
+                            135deg,
+                            #ffffff 0%,
+                            #f8f9fa 100%
+                          );
+                          border-radius: 12px;
+                          border: 2px solid rgba(74, 144, 226, 0.2);
+                          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                          text-align: center;
+                          padding: 15px;
+                          font-size: 15px;
+                          color: #333;
+                          font-weight: 500;
+                        "
+                      >
+                        <tr>
+                          <td>
+                            📩 <br />
+                            clbsomediaptit@gmail.com
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      style="
+                        width: 50%;
+                        padding-left: 10px;
+                        vertical-align: top;
+                      "
+                    >
+                      <table
+                        width="100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        style="
+                          background: linear-gradient(
+                            135deg,
+                            #ffffff 0%,
+                            #f8f9fa 100%
+                          );
+                          border-radius: 12px;
+                          border: 2px solid rgba(74, 144, 226, 0.2);
+                          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                          text-align: center;
+                          padding: 15px;
+                          font-size: 15px;
+                          color: #333;
+                          font-weight: 500;
+                        "
+                      >
+                        <tr>
+                          <td>📍 Km10, Nguyễn Trãi, Hà Đông, Hà Nội</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Liên hệ trực tiếp -->
+            <tr>
+              <td
+                style="
+                  background-color: rgba(255, 255, 255, 0.7);
+                  border-radius: 10px;
+                  border: 1px solid rgba(74, 144, 226, 0.2);
+                  text-align: center;
+                  padding: 15px;
+                  margin-top: 20px;
+                "
+              >
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td
+                      style="
+                        font-weight: bold;
+                        color: #4a90e2;
+                        font-size: 16px;
+                        padding-bottom: 10px;
+                      "
+                    >
+                      📞 Liên hệ trực tiếp:
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-size: 14px; color: #333; line-height: 1.5">
+                      Uyên Nhi: 0979.236.877 | Văn Trung: 0383.841.814
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <div class="map">🗺️ Bản đồ vị trí</div>
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/somedia-b1b9a.firebasestorage.app/o/test%2F%C4%90%E1%BB%8AA%20%C4%90I%E1%BB%82M-01.png?alt=media&token=f2b8a4c5-5c6c-4726-a18f-5bb2042b43b3"
+            alt="Địa điểm phỏng vấn"
+          />
         </div>
-        <div class="map">🗺️ Bản đồ vị trí</div>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/somedia-b1b9a.firebasestorage.app/o/test%2F%C4%90%E1%BB%8AA%20%C4%90I%E1%BB%82M-01.png?alt=media&token=f2b8a4c5-5c6c-4726-a18f-5bb2042b43b3"
-          alt="Địa điểm phỏng vấn"
-        />
       </div>
       <div class="footer">CLB Sổ Media - Gen 9 Recruitment</div>
     </div>
