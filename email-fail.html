@@ -4,6 +4,228 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thoong báo kết quả vòng CV _ CLB Sổ Media</title>
+    <style>
+      /* Responsive CSS */
+      .email-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .header-section {
+        background-color: #fa675d;
+        text-align: center;
+        border-radius: 20px 20px 0 0;
+        padding: 20px;
+      }
+
+      .content-section {
+        padding: 20px;
+        background-color: white;
+      }
+
+      .footer-section {
+        background-color: #fa675d;
+        color: white;
+        text-align: center;
+        border-radius: 0 0 20px 20px;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 25px;
+      }
+
+      .greeting-text {
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .result-box {
+        font-size: 16px;
+        color: #333333;
+        background-color: #fadfdf;
+        border-radius: 10px;
+        margin: 25px 0;
+        border: 1.8px solid #ee9797;
+      }
+
+      .result-content {
+        text-align: center;
+        font-size: 18px;
+        color: black;
+        padding: 25px;
+      }
+
+      .info-box {
+        background-color: #f7f4f4;
+        margin-bottom: 25px;
+        border: 1px solid #d7cfcf;
+        border-radius: 10px;
+      }
+
+      .info-content {
+        font-size: 16px;
+        color: #333333;
+        line-height: 1.8;
+        text-align: justify;
+        padding: 20px;
+      }
+
+      .thank-you-box {
+        background-color: #daeef7;
+        margin-bottom: 25px;
+        border: 1px solid #d7cfcf;
+        border-radius: 10px;
+      }
+
+      .thank-you-content {
+        font-size: 16px;
+        color: #333333;
+        line-height: 1.8;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .contact-box {
+        background-color: #f7f4f4;
+        margin-bottom: 25px;
+        border: 2px solid #80c7e9;
+        border-radius: 10px;
+      }
+
+      .contact-header {
+        font-size: 18px;
+        color: #333333;
+        line-height: 1.8;
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+
+      .contact-item {
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+
+      .contact-text {
+        font-size: 16px;
+        color: #333333;
+        line-height: 1.8;
+        text-align: center;
+        font-weight: 500;
+        padding: 12px;
+      }
+
+      .contact-note {
+        font-size: 14px;
+        color: #666666;
+        text-align: center;
+        font-style: italic;
+        padding-top: 15px;
+      }
+
+      /* Mobile Responsive */
+      @media only screen and (max-width: 600px) {
+        .email-container {
+          width: 100% !important;
+          max-width: 100% !important;
+          margin: 0 !important;
+        }
+
+        .header-section {
+          padding: 15px !important;
+          border-radius: 10px 10px 0 0 !important;
+        }
+
+        .header-section h1 {
+          font-size: 20px !important;
+        }
+
+        .content-section {
+          padding: 15px !important;
+        }
+
+        .greeting-text {
+          font-size: 16px !important;
+        }
+
+        .result-content {
+          font-size: 16px !important;
+          padding: 20px !important;
+        }
+
+        .result-content span {
+          font-size: 18px !important;
+        }
+
+        .info-content {
+          font-size: 14px !important;
+          padding: 15px !important;
+        }
+
+        .thank-you-content {
+          font-size: 14px !important;
+          padding: 15px !important;
+        }
+
+        .thank-you-content span {
+          font-size: 18px !important;
+        }
+
+        .contact-header {
+          font-size: 16px !important;
+          padding-bottom: 15px !important;
+        }
+
+        .contact-text {
+          font-size: 14px !important;
+          padding: 10px !important;
+        }
+
+        .contact-note {
+          font-size: 12px !important;
+          padding-top: 10px !important;
+        }
+
+        .footer-section {
+          padding: 20px !important;
+          font-size: 14px !important;
+        }
+      }
+
+      /* Tablet Responsive */
+      @media only screen and (min-width: 601px) and (max-width: 768px) {
+        .email-container {
+          max-width: 90% !important;
+        }
+
+        .header-section {
+          padding: 18px !important;
+        }
+
+        .content-section {
+          padding: 18px !important;
+        }
+
+        .result-content {
+          padding: 22px !important;
+        }
+
+        .info-content {
+          padding: 18px !important;
+        }
+
+        .thank-you-content {
+          padding: 18px !important;
+        }
+
+        .contact-text {
+          padding: 11px !important;
+        }
+      }
+    </style>
   </head>
   <body
     style="
@@ -18,7 +240,7 @@
       cellpadding="0"
       cellspacing="0"
       border="0"
-      style="background-color: black"
+      style="background-color: #160b24"
     >
       <tr>
         <td align="center" style="padding: 20px">
@@ -27,8 +249,9 @@
             cellpadding="0"
             cellspacing="0"
             border="0"
+            class="email-container"
             style="
-              background-color: black;
+              background-color: #160b24;
               border-radius: 8px;
               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
               max-width: 600px;
@@ -36,6 +259,7 @@
           >
             <tr>
               <td
+                class="header-section"
                 style="
                   background-color: #fa675d;
                   text-align: center;
@@ -56,7 +280,10 @@
             </tr>
 
             <tr>
-              <td style="padding: 20px; background-color: white">
+              <td
+                class="content-section"
+                style="padding: 20px; background-color: white"
+              >
                 <table
                   width="100%"
                   cellpadding="0"
@@ -66,14 +293,16 @@
                 >
                   <tr>
                     <td
+                      class="greeting-text"
                       style="
-                        padding-bottom: 10px;
+                        padding-top: 12px;
+                        padding-bottom: 12px;
                         text-align: center;
-                        font-size: 18px;
+                        font-size: 25px;
                         font-weight: bold;
                       "
                     >
-                      Chào bạn $NAME
+                      Xin chào $NAME
                     </td>
                   </tr>
                 </table>
@@ -83,6 +312,7 @@
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
+                  class="result-box"
                   style="
                     font-size: 16px;
                     color: #333333;
@@ -94,6 +324,7 @@
                 >
                   <tr>
                     <td
+                      class="result-content"
                       style="
                         text-align: center;
                         font-size: 18px;
@@ -115,6 +346,7 @@
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
+                  class="info-box"
                   style="
                     background-color: #f7f4f4;
                     margin-bottom: 25px;
@@ -124,6 +356,7 @@
                 >
                   <tr>
                     <td
+                      class="info-content"
                       style="
                         font-size: 16px;
                         color: #333333;
@@ -144,6 +377,7 @@
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
+                  class="info-box"
                   style="
                     background-color: #f7f4f4;
                     margin-bottom: 25px;
@@ -153,6 +387,7 @@
                 >
                   <tr>
                     <td
+                      class="info-content"
                       style="
                         font-size: 16px;
                         color: #333333;
@@ -176,6 +411,7 @@
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
+                  class="thank-you-box"
                   style="
                     background-color: #daeef7;
                     margin-bottom: 25px;
@@ -185,6 +421,7 @@
                 >
                   <tr>
                     <td
+                      class="thank-you-content"
                       style="
                         font-size: 16px;
                         color: #333333;
@@ -205,6 +442,7 @@
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
+                  class="contact-box"
                   style="
                     background-color: #f7f4f4;
                     margin-bottom: 25px;
@@ -222,6 +460,7 @@
                       >
                         <tr>
                           <td
+                            class="contact-header"
                             style="
                               font-size: 18px;
                               color: #333333;
@@ -241,6 +480,7 @@
                         cellpadding="0"
                         cellspacing="0"
                         border="0"
+                        class="contact-item"
                         style="
                           background-color: rgb(255, 255, 255);
                           border-radius: 10px;
@@ -249,6 +489,7 @@
                       >
                         <tr>
                           <td
+                            class="contact-text"
                             style="
                               font-size: 16px;
                               color: #333333;
@@ -268,6 +509,7 @@
                         cellpadding="0"
                         cellspacing="0"
                         border="0"
+                        class="contact-item"
                         style="
                           background-color: rgb(255, 255, 255);
                           border-radius: 10px;
@@ -276,6 +518,7 @@
                       >
                         <tr>
                           <td
+                            class="contact-text"
                             style="
                               font-size: 16px;
                               color: #333333;
@@ -295,6 +538,7 @@
                         cellpadding="0"
                         cellspacing="0"
                         border="0"
+                        class="contact-item"
                         style="
                           background-color: rgb(255, 255, 255);
                           border-radius: 10px;
@@ -303,6 +547,7 @@
                       >
                         <tr>
                           <td
+                            class="contact-text"
                             style="
                               font-size: 16px;
                               color: #333333;
@@ -327,6 +572,7 @@
                       >
                         <tr>
                           <td
+                            class="contact-note"
                             style="
                               font-size: 14px;
                               color: #666666;
@@ -348,6 +594,7 @@
 
             <tr>
               <td
+                class="footer-section"
                 style="
                   background-color: #fa675d;
                   color: white;
